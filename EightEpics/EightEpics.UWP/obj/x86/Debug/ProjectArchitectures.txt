@@ -1,0 +1,2 @@
+c:\Users\Yann\Documents\Visual Studio 2015\Projects\EightEpics\EightEpics\EightEpics.UWP\EightEpics.UWP.csproj;x86
+c:\Users\Yann\Documents\Visual Studio 2015\Projects\EightEpics\EightEpics\EightEpics\EightEpics.csproj;neutral
