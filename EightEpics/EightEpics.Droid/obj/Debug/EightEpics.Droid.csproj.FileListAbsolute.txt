@@ -68,4 +68,3 @@ c:\Users\Yann\Documents\Visual Studio 2015\Projects\EightEpics\EightEpics\EightE
 c:\Users\Yann\Documents\Visual Studio 2015\Projects\EightEpics\EightEpics\EightEpics.Droid\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
 c:\Users\Yann\Documents\Visual Studio 2015\Projects\EightEpics\EightEpics\EightEpics.Droid\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll.mdb
 c:\Users\Yann\Documents\Visual Studio 2015\Projects\EightEpics\EightEpics\EightEpics.Droid\obj\Debug\EightEpics.Droid.dll.mdb
-c:\Users\Yann\Documents\Visual Studio 2015\Projects\EightEpics\EightEpics\EightEpics.Droid\bin\Debug\EightEpics.Droid.dll.mdb

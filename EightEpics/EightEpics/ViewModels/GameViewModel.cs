@@ -1,4 +1,4 @@
-﻿using System;
+﻿using EightEpics.Models.Heroes;
 using System.Collections.Generic;
 using System.ComponentModel;
 
@@ -23,19 +23,19 @@ namespace EightEpics.ViewModels
                 _dicesList.Add(dice);
             }
 
-            AddHero("Noble saint", 5, "Restore 1 LP of another hero. Reroll up to 2 dices");
-            AddHero("Invincible general", 6, "ready one hero. Reroll up to 2 dices.");
-            AddHero("High Paladin", 6, "change one die to result 1.");
-            AddHero("Treason demon", 6, "change 1 die to a 6.");
-            AddHero("Mysterious Swordmaster", 6, "Add or remove 1 die from the rolling poll.");
-            AddHero("Immortal Witch", 4, "Use the power of another hero.");
-            AddHero("Omniscient Magus", 5, "Choose a dice value - increase or decrease all dices showing that value");
-            AddHero("Miracle artificer", 5, "Choose up to 2 dice to flip so they show their face down side");
+            AddHero(new HighPaladin());
+            AddHero(new NobleSaint());
+            AddHero(new InvincibleGeneral());
+            AddHero(new TreasonDemon());
+            AddHero(new Swordmaster());
+            AddHero(new ImmortalWitch());
+            AddHero(new OmniscientMagnus());
+            AddHero(new MiracleArtificier());
         }
 
-        private void AddHero(string heroName, int lifePoints, string power)
+        private void AddHero(IHero heroModel)
         {
-            var hero = new HeroViewModel { Name = heroName, LifePoints = lifePoints, Power = power };
+            var hero = new HeroViewModel (heroModel);
             hero.PropertyChanged += HeroChanged;
 
             _heroes.Add(hero);

@@ -1,4 +1,6 @@
-﻿using System.ComponentModel;
+﻿using EightEpics.Models.Heroes;
+using System.ComponentModel;
+using Xamarin.Forms;
 
 namespace EightEpics.ViewModels
 {
@@ -6,6 +8,7 @@ namespace EightEpics.ViewModels
     {
         public event PropertyChangedEventHandler PropertyChanged;
         bool exhausted;
+        int lifePoints;
 
         public bool Exhausted
         {
@@ -23,7 +26,6 @@ namespace EightEpics.ViewModels
                 }
             }
         }
-        int lifePoints;
 
         public int LifePoints
         {
@@ -44,5 +46,23 @@ namespace EightEpics.ViewModels
 
         public string Name { get; set; }
         public string Power { get; set; }
+
+        public Color Color { get; set; }
+
+        public string Image { get; set; }
+
+        public HeroViewModel(IHero heroModel)
+        {
+            Name = heroModel.Name;
+            lifePoints = heroModel.LifePoints;
+            exhausted = false;
+            Color = heroModel.Color;
+            Image = heroModel.Image;
+        }
+
+        private HeroViewModel()
+        {
+
+        }
     }
 }
